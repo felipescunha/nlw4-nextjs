@@ -7,7 +7,6 @@ export function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
   const { resetCountdown } = useContext(CountdownContext);
 
-
   function rendleChallengeSucceeded() {
     completeChallenge();
     resetCountdown();
@@ -17,7 +16,6 @@ export function ChallengeBox() {
     resetChallenge();
     resetCountdown();
   }
-
 
   return (
     <div className={styles.challengeBoxContainer}>
